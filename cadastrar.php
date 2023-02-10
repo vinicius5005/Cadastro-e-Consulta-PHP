@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <link rel="stylesheet" href="includes/header.css">
   <title>Adicionar usuário</title>
 </head>
 <body>
@@ -10,16 +11,16 @@
       echo "<p style='color:green'>" . $_SESSION['message'] . "</p>";
       unset($_SESSION['message']);
     }
-  ?>
 
-  <?php
     include_once 'DbConnection.php';
     $user = new User($conn);
+    include 'includes/header.html';
     
   ?>
 
-  <h1>Cadastro de Usuarios</h1>
 
+ 
+  <h1>Cadastro de Usuarios</h1>
   <form action="addUser.php" method="post">
   <label for="nome">nome:</label>
   <input type="text" name="nome" id="nome">
@@ -32,8 +33,10 @@
   
   <input type="submit" value="Enviar">
 </form>
-</body>
-</html>
+
+<?php 
+include 'includes/footer.html';
+?>
 
 
 

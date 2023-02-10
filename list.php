@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Lista de Usuários</title>
-  </head>
-  <body>
+
+
+<head>
+   
+    <link rel="stylesheet" href="includes/header.css">
+    <title>Adicionar usuário</title>
+</head>
+
+<?php 
+include 'includes/header.html';
+?>
     <table>
       <tr>
         <th>Nome</th>
@@ -27,5 +30,8 @@
     }
   ?>
 </table>
-</body>
-</html>
+
+
+<?php 
+include 'includes/footer.html';
+?>
