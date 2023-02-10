@@ -8,9 +8,9 @@
   <body>
     <table>
       <tr>
-        <th>ID</th>
-        <th>Nome de Usuário</th>
+        <th>Nome</th>
         <th>CPF</th>
+        <th>Contato</th>
       </tr>
       <?php
         require_once 'DbConnection.php';
