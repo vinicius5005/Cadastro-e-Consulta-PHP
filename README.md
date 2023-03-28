@@ -1,2 +1,2 @@
 # Cadastro-e-Consulta-PHP
-Formulário simples para estudo 
+Crud simples para fins de estudo utilizando PDO
